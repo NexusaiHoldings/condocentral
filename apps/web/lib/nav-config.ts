@@ -1,10 +1,10 @@
 export type NavLink = {
-  title: string;
+  label: string;
   href: string;
 };
 
 export type NavGroup = {
-  title: string;
+  label: string;
   links: NavLink[];
 };
 
@@ -17,40 +17,40 @@ export type NavConfig = {
 export const NAV_CONFIG: NavConfig = {
   logoHref: "/",
   primary: [
-    { title: "Home", href: "/" },
-    { title: "Documents", href: "/documents" },
-    { title: "Resident Portal", href: "/portal" },
-    { title: "Compliance", href: "/compliance" },
-    { title: "Votes", href: "/votes" },
+    { label: "Home", href: "/" },
+    { label: "Documents", href: "/documents" },
+    { label: "Resident Portal", href: "/portal" },
+    { label: "Compliance", href: "/compliance" },
+    { label: "Votes", href: "/votes" },
   ],
   groups: [
     {
-      title: "Finances",
+      label: "Finances",
       links: [
-        { title: "Dues", href: "/finances/dues" },
-        { title: "Ledger", href: "/finances/ledger" },
+        { label: "Dues", href: "/finances/dues" },
+        { label: "Ledger", href: "/finances/ledger" },
       ],
     },
     {
-      title: "Communications",
+      label: "Communications",
       links: [
-        { title: "Announcements", href: "/communications/announcements" },
+        { label: "Announcements", href: "/communications/announcements" },
       ],
     },
     {
-      title: "Compliance & Enforcement",
+      label: "Compliance & Enforcement",
       links: [
-        { title: "Violations", href: "/violations" },
-        { title: "Compliance", href: "/compliance" },
+        { label: "Violations", href: "/violations" },
+        { label: "Compliance", href: "/compliance" },
       ],
     },
     {
-      title: "Resident Experience",
-      links: [{ title: "Portal Home", href: "/portal" }],
+      label: "Resident Experience",
+      links: [{ label: "Portal Home", href: "/portal" }],
     },
     {
-      title: "Governance",
-      links: [{ title: "Votes", href: "/votes" }],
+      label: "Governance",
+      links: [{ label: "Votes", href: "/votes" }],
     },
   ],
 };
