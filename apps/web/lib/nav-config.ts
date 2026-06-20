@@ -1,24 +1,33 @@
 export const NAV_CONFIG = {
   primary: [
-    { label: "Portal", href: "/portal" },
-    { label: "Violations", href: "/violations" },
-    { label: "Compliance", href: "/compliance" },
-    { label: "Votes", href: "/votes" },
-    { label: "Documents", href: "/documents" },
+    { title: "Home", href: "/" },
+    { title: "Resident Portal", href: "/portal" },
   ],
   groups: [
     {
-      label: "Finances",
+      title: "Finances",
       items: [
-        { label: "Dues", href: "/finances/dues" },
-        { label: "Ledger", href: "/finances/ledger" },
+        { title: "Dues", href: "/finances/dues" },
+        { title: "Ledger", href: "/finances/ledger" },
       ],
     },
     {
-      label: "Communications",
+      title: "Community",
       items: [
-        { label: "Announcements", href: "/communications/announcements" },
+        { title: "Announcements", href: "/communications/announcements" },
+        { title: "Documents", href: "/documents" },
       ],
     },
+    {
+      title: "Compliance",
+      items: [
+        { title: "Violations", href: "/violations" },
+        { title: "Compliance", href: "/compliance" },
+      ],
+    },
+    {
+      title: "Governance",
+      items: [{ title: "Votes", href: "/votes" }],
+    },
   ],
-};
+} as const;
