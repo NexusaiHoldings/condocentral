@@ -13,27 +13,27 @@ export interface HomeConfig {
 }
 
 export const homeConfig: HomeConfig = {
-  "headline": "Run Your HOA Without a $30-80/Unit Management Company",
-  "subhead": "CondoCentral gives volunteer HOA boards in Florida, California, Texas, and Nevada everything they need to self-manage dues billing, accounting, resident communication, and state-specific compliance \u2014 without the five-figure management fees.",
-  "featuresTitle": "Everything your board needs to self-manage",
+  "headline": "Run Your HOA Without the Management Company",
+  "subhead": "CondoCentral gives volunteer HOA boards in Florida, California, Texas, and Nevada everything they need to handle dues billing, accounting, resident communication, and state-specific compliance \u2014 without paying $30\u201380 per unit per month to a management company.",
+  "featuresTitle": "Everything your board needs to govern with confidence",
   "features": [
     {
-      "title": "Automated Dues Billing and Collection",
-      "body": "Send dues invoices, track payments, and flag delinquencies automatically so your treasurer spends minutes per month \u2014 not weekends \u2014 keeping the books straight."
+      "title": "Dues billing and collections",
+      "body": "Automatically generate and send dues invoices, track payments, and flag delinquencies \u2014 so your treasurer spends minutes on billing, not weekends."
     },
     {
-      "title": "HOA Accounting Built for Boards",
-      "body": "Track operating budgets under $300K with a chart of accounts designed for community associations, giving your board audit-ready financials without hiring an outside bookkeeper."
+      "title": "Community accounting and ledgers",
+      "body": "Maintain a clean, auditable general ledger with reserve tracking and budget-vs-actual reporting that any board member or auditor can read at a glance."
     },
     {
-      "title": "AI-Drafted Compliance Documents",
-      "body": "Generate violation notices, meeting minutes, and state-required disclosures using AI trained on your community's own CC&Rs and the laws of your state, so every document holds up legally."
+      "title": "AI-drafted compliance documents",
+      "body": "Generate violation notices, meeting minutes, and state-required disclosures grounded in your community's own CC&Rs \u2014 reviewed by AI so nothing conflicts with your governing documents."
     },
     {
-      "title": "Resident Communication and Records Hub",
-      "body": "Send announcements, manage owner contact records, and store governing documents in one place so new board members inherit clean, complete records \u2014 not a broken spreadsheet."
+      "title": "Resident communication hub",
+      "body": "Send announcements, post community documents, and manage owner records in one organized portal so every resident stays informed and every message is on the record."
     }
   ],
-  "closingHeadline": "Your community deserves great management \u2014 you can do it yourself",
+  "closingHeadline": "Your community deserves order, fairness, and a board that isn't burned out \u2014 CondoCentral makes that possible",
   "mode": "landing"
 };
