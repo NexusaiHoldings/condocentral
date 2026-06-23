@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { getViolation, generateViolationDraft } from "@/lib/hoa/violations";
+import { getViolation, generateViolationDraft, resolveCommunityId } from "@/lib/hoa/violations";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -19,7 +19,7 @@ const STATUS_LABELS: Record<string, string> = {
 export default async function ViolationDetailPage({
   params,
 }: PageProps): Promise<JSX.Element> {
-  const communityId = process.env.COMMUNITY_ID ?? "";
+  const communityId = resolveCommunityId();
   const violation = await getViolation(params.violationId, communityId);
 
   if (!violation) {
@@ -30,7 +30,7 @@ export default async function ViolationDetailPage({
     "use server";
     await generateViolationDraft(
       params.violationId,
-      process.env.COMMUNITY_ID ?? "",
+      resolveCommunityId(),
     );
     redirect(`/violations/${params.violationId}`);
   }

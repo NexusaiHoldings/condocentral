@@ -5,6 +5,7 @@ import {
   getViolation,
   approveViolation,
   sendViolationNotice,
+  resolveCommunityId,
 } from "@/lib/hoa/violations";
 
 export const dynamic = "force-dynamic";
@@ -23,7 +24,7 @@ const STATUS_LABELS: Record<string, string> = {
 export default async function ViolationReviewPage({
   params,
 }: PageProps): Promise<JSX.Element> {
-  const communityId = process.env.COMMUNITY_ID ?? "";
+  const communityId = resolveCommunityId();
   const violation = await getViolation(params.violationId, communityId);
 
   if (!violation) {
@@ -43,7 +44,7 @@ export default async function ViolationReviewPage({
     await approveViolation(
       params.violationId,
       boardMemberId,
-      process.env.COMMUNITY_ID ?? "",
+      resolveCommunityId(),
     );
     redirect(`/violations/${params.violationId}/review`);
   }
@@ -52,7 +53,7 @@ export default async function ViolationReviewPage({
     "use server";
     await sendViolationNotice(
       params.violationId,
-      process.env.COMMUNITY_ID ?? "",
+      resolveCommunityId(),
     );
     redirect(`/violations/${params.violationId}/review`);
   }

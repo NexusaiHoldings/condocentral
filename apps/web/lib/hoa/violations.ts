@@ -20,6 +20,20 @@ import {
 
 export type ViolationStatus = "draft" | "board_approved" | "sent";
 
+/**
+ * Resolve the active community id, consistent with the rest of the HOA app
+ * (finances/dues, portal, announcements). Prefers HOA_COMMUNITY_ID; falls back
+ * to the legacy COMMUNITY_ID, then the default-community uuid. Always returns a
+ * valid uuid so `community_id = $1` never throws on an empty/invalid value.
+ */
+export function resolveCommunityId(): string {
+  return (
+    process.env.HOA_COMMUNITY_ID ||
+    process.env.COMMUNITY_ID ||
+    "00000000-0000-0000-0000-000000000001"
+  );
+}
+
 export interface Violation {
   id: string;
   community_id: string;
@@ -124,6 +138,7 @@ export async function listViolations(
   communityId: string,
   status?: ViolationStatus,
 ): Promise<Violation[]> {
+  if (!communityId) return [];
   const db = buildDb();
   if (status) {
     return db.query<Violation>(

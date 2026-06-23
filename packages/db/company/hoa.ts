@@ -54,3 +54,40 @@ CREATE TABLE IF NOT EXISTS homeowners (
 CREATE INDEX IF NOT EXISTS idx_homeowners_community_id ON homeowners (community_id);
 CREATE INDEX IF NOT EXISTS idx_homeowners_unit_id      ON homeowners (unit_id);
 `;
+
+/**
+ * Violation notices (F1) — the table the /violations workflow reads + writes.
+ *
+ * This was MISSING: apps/web/lib/hoa/violations.ts queries `hoa_violations`
+ * but no DDL ever created it, so /violations 500'd with "relation
+ * hoa_violations does not exist". Columns mirror the Violation interface +
+ * the INSERT/UPDATE statements in violations.ts. No FK on community_id /
+ * homeowner_id so the feature works before parent rows are fully seeded; no
+ * CHECK on the free-form status column per spec.
+ */
+export const HOA_VIOLATIONS_DDL = `
+CREATE TABLE IF NOT EXISTS hoa_violations (
+  id                     uuid        PRIMARY KEY DEFAULT gen_random_uuid(),
+  community_id           uuid        NOT NULL,
+  homeowner_id           uuid        NOT NULL,
+  address                text        NOT NULL,
+  violation_type         text        NOT NULL,
+  description            text        NOT NULL,
+  ccr_section            text        NOT NULL,
+  reported_by            text        NOT NULL,
+  status                 text        NOT NULL DEFAULT 'draft',
+  drafted_letter         text,
+  fair_housing_approved  boolean,
+  fair_housing_flags     text[],
+  fair_housing_risk      text,
+  fair_housing_reasoning text,
+  board_approver_id      uuid,
+  approved_at            timestamptz,
+  sent_at                timestamptz,
+  created_at             timestamptz NOT NULL DEFAULT now(),
+  updated_at             timestamptz NOT NULL DEFAULT now()
+);
+
+CREATE INDEX IF NOT EXISTS idx_hoa_violations_community
+  ON hoa_violations (community_id, status, created_at DESC);
+`;

@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import Link from "next/link";
-import { listViolations, type ViolationStatus } from "@/lib/hoa/violations";
+import { listViolations, resolveCommunityId, type ViolationStatus } from "@/lib/hoa/violations";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -20,7 +20,7 @@ interface PageProps {
 export default async function ViolationsPage({
   searchParams,
 }: PageProps): Promise<JSX.Element> {
-  const communityId = process.env.COMMUNITY_ID ?? "";
+  const communityId = resolveCommunityId();
   const rawStatus = searchParams.status ?? "";
   const statusFilter = VALID_STATUSES.includes(rawStatus as ViolationStatus)
     ? (rawStatus as ViolationStatus)
