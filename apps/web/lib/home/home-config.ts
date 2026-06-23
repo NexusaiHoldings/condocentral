@@ -145,9 +145,9 @@ export const homeConfig: HomeConfig = {
       "type": "hero",
       "headline": "Run Your HOA Without a Management Company",
       "eyebrow": "Self-Managed HOA Software",
-      "subhead": "CondoCentral gives volunteer boards the tools to handle dues billing, reserve accounting, resident communication, and state-specific compliance \u2014 all in one platform built for communities who choose to govern themselves.",
+      "subhead": "CondoCentral gives volunteer boards the tools to handle dues billing, accounting, resident communication, and state-specific compliance \u2014 at a fraction of what a management company charges.",
       "primaryCta": {
-        "label": "Start Managing Your Community",
+        "label": "Start Managing Free",
         "href": "/signup"
       },
       "secondaryCta": {
@@ -163,202 +163,199 @@ export const homeConfig: HomeConfig = {
       "stats": [
         {
           "value": "$30\u2013$80",
-          "label": "Per-unit monthly cost of a management company \u2014 eliminated"
+          "label": "Per unit, per month charged by management companies"
         },
         {
-          "value": "$24K+",
-          "label": "Average annual savings for a 100-unit community"
+          "value": "72%",
+          "label": "Of HOA disputes trace back to poor recordkeeping"
+        },
+        {
+          "value": "$18K+",
+          "label": "Typical annual savings for a 100-unit community switching to self-management"
         },
         {
           "value": "50\u2013400",
-          "label": "Units served per community, from small condos to large subdivisions"
-        },
-        {
-          "value": "4 states",
-          "label": "FL, CA, TX, and NV compliance frameworks built in at launch"
+          "label": "Units \u2014 the community size CondoCentral is built for"
         }
       ],
-      "title": "What Boards Reclaim When They Self-Manage"
+      "title": "The Cost of Outsourcing Your Community"
     },
     {
       "type": "how_it_works",
       "steps": [
         {
           "title": "Import Your Community",
-          "body": "Upload your unit roster, existing owner records, and governing documents \u2014 your CC&Rs, bylaws, and rules. CondoCentral structures them into a living record your whole board can access."
+          "body": "Upload your unit roster, owner contacts, and existing balances. CondoCentral structures your ledger from day one so nothing carries over broken."
         },
         {
-          "title": "Set Up Dues and Accounting",
-          "body": "Configure your assessment schedule, late-fee policy, and reserve contributions. CondoCentral generates invoices, tracks payments, and maintains a double-entry ledger that stands up to any audit."
+          "title": "Configure Dues & Assessments",
+          "body": "Set recurring dues schedules, special assessments, and late-fee rules. Invoices generate automatically and owners receive payment instructions by email."
         },
         {
-          "title": "Communicate and Stay Compliant",
-          "body": "Send meeting notices, violation letters, and budget disclosures that meet Florida, California, Texas, or Nevada statutory requirements \u2014 drafted by AI grounded in your own governing documents."
+          "title": "Communicate and Document",
+          "body": "Send board notices, meeting minutes, and violation letters from a single hub. Our AI drafts documents grounded in your community's own CC&Rs \u2014 you review and send."
         },
         {
-          "title": "Run Your Board with Confidence",
-          "body": "Access real-time financial dashboards, delinquency reports, and a full document archive so every board member \u2014 treasurer or first-time director \u2014 always knows where the community stands."
+          "title": "Close the Books Each Month",
+          "body": "Reconcile accounts, review the income and expense summary, and produce the financial package your board needs for every meeting \u2014 in minutes, not a weekend."
         }
       ],
-      "title": "From Broken Records to a Board That Runs Itself",
-      "subhead": "Whether you just lost your management company or inherited a spreadsheet disaster after a board election, CondoCentral gets your community operational in days, not months."
+      "title": "Up and Running in Days, Not Months",
+      "subhead": "CondoCentral is structured around the real workflow of a volunteer board \u2014 no consultant required to configure it."
     },
     {
       "type": "feature_spotlight",
       "items": [
         {
-          "title": "AI Compliance Documents Grounded in Your CC&Rs",
-          "body": "Most HOA software gives you generic templates. CondoCentral reads your community's actual CC&Rs and bylaws, then drafts violation notices, architectural-review decisions, and meeting agendas that cite your specific rules \u2014 not boilerplate. When state law changes in Florida or California, the AI flags which of your standing documents need updating and proposes revised language for board approval.",
+          "title": "CC&R-Grounded AI Document Drafting",
+          "body": "Upload your Declaration, Bylaws, and Rules once. CondoCentral's AI reads them and uses that language \u2014 not generic templates \u2014 when drafting violation notices, architectural review decisions, and meeting agendas. Every output cites the specific provision it draws from, so your board communicates with the authority of your own governing documents.",
           "image": {
-            "url": "https://runtime.nexusaiholdings.com/assets/62125efe-e3d9-4461-a356-fd267a6bd823",
-            "alt": "AI Compliance Documents Grounded in Your CC&Rs"
+            "url": "https://runtime.nexusaiholdings.com/assets/7b775cff-19d0-4704-bbbf-c7465b3f7cc1",
+            "alt": "CC&R-Grounded AI Document Drafting"
           }
         },
         {
-          "title": "Dues Billing and Double-Entry Accounting in One Ledger",
-          "body": "Dues billing and the general ledger live in the same system, so every payment posted to an owner's account is simultaneously recorded in your operating or reserve fund \u2014 no manual reconciliation, no end-of-year surprises. Generate a bank-ready reserve-fund report, a year-end income statement, or a delinquency aging report in seconds, formatted for your state's required disclosure format.",
+          "title": "Integrated Dues Billing and Ledger Accounting",
+          "body": "Assessments, payments, credits, and late fees all post to the same owner ledger that feeds your financial reports. There is no separate spreadsheet to reconcile. When a dues dispute arises, every transaction has a date-stamped audit trail a board member or attorney can read in seconds.",
           "image": {
-            "url": "https://runtime.nexusaiholdings.com/assets/bc662416-811a-4700-a6a9-cd9b6cb2750a",
-            "alt": "Dues Billing and Double-Entry Accounting in One Ledger"
+            "url": "https://runtime.nexusaiholdings.com/assets/126ff38a-259d-4676-8f93-68e96283d798",
+            "alt": "Integrated Dues Billing and Ledger Accounting"
           }
         },
         {
-          "title": "Resident Communication That Builds Trust",
-          "body": "Owners receive dues statements, payment confirmations, violation notices, and meeting packets through a branded community portal and email \u2014 with read receipts the board can reference in dispute resolution. When a dues dispute surfaces, the full payment history, original assessment schedule, and any board communications are in one auditable thread, not scattered across three board members' persona",
+          "title": "State-Specific Compliance Guidance for FL, CA, TX, and NV",
+          "body": "Annual meeting notice windows, reserve study requirements, collection procedure mandates \u2014 each state has its own rules. CondoCentral surfaces the deadlines and required language that apply to your community's state, so a first-time treasurer isn't left guessing what the statute requires.",
           "image": {
-            "url": "https://runtime.nexusaiholdings.com/assets/1e9f405d-d663-4756-9f7e-20ac8ffcac8a",
-            "alt": "Resident Communication That Builds Trust"
+            "url": "https://runtime.nexusaiholdings.com/assets/2a57f4ad-2c77-45a5-b186-bd652341748c",
+            "alt": "State-Specific Compliance Guidance for FL, CA, TX, and NV"
           }
         }
       ],
-      "title": "The Capabilities That Replace Your Management Company"
+      "title": "Built for the Work Boards Actually Do"
     },
     {
       "type": "feature_grid",
       "features": [
         {
-          "title": "Owner and Unit Registry",
-          "body": "Maintain a complete, current record of unit ownership, mailing addresses, tenant occupancy, and contact preferences \u2014 the single source of truth your board, lenders, and title companies rely on."
+          "title": "Owner & Resident Portal",
+          "body": "Owners log in to view their balance, pay dues, submit architectural requests, and access shared documents \u2014 reducing board inbox volume significantly."
         },
         {
-          "title": "Assessment Scheduling",
-          "body": "Configure monthly, quarterly, or annual assessments with automatic proration for mid-year closings, special assessments, and payment-plan arrangements approved by the board."
+          "title": "Meeting Management",
+          "body": "Build agendas, record minutes, and store resolutions in a structured archive. Every meeting is a searchable record, not a lost email thread."
         },
         {
-          "title": "Reserve Fund Tracking",
-          "body": "Maintain separate operating and reserve fund balances with contribution tracking, so your community always knows its reserve-funding percentage and can answer buyer due-diligence questionnaires accurately."
+          "title": "Violation Tracking",
+          "body": "Log violations, attach photos, send AI-drafted notices, and track resolution status. The full history is attached to the unit, not to the board member who filed it."
         },
         {
-          "title": "State-Specific Compliance Calendar",
-          "body": "A rolling compliance calendar surfaces Florida HB 1021, California Civil Code, Texas PRC, and Nevada NRS deadlines \u2014 annual budget ratification, meeting notice windows, reserve study requirements \u2014 before they become violations."
+          "title": "Vendor & Work Order Management",
+          "body": "Track service requests, assign vendors, and store contracts and invoices alongside the work they relate to \u2014 so the next board inherits context, not chaos."
+        },
+        {
+          "title": "Financial Reporting",
+          "body": "Income statements, balance sheets, delinquency reports, and budget-vs-actual summaries generate on demand in a format your CPA or auditor will recognize."
         },
         {
           "title": "Document Vault",
-          "body": "Store CC&Rs, bylaws, meeting minutes, financial statements, vendor contracts, and insurance certificates in a structured, searchable archive that survives board turnover and satisfies state record-retention requirements."
-        },
-        {
-          "title": "Board Role Permissions",
-          "body": "Assign treasurer, president, secretary, and read-only director roles so every board member sees what they need and nothing they shouldn't \u2014 with a full audit log of who changed what and when."
+          "body": "Store your CC&Rs, insurance certificates, reserve studies, and historical records in a permissioned repository accessible to the board and, selectively, to residents."
         }
       ],
-      "title": "Everything a Self-Managed Board Needs, Nothing It Doesn't",
-      "subhead": "Designed for volunteer treasurers and board presidents, not professional property managers."
+      "title": "Everything a Self-Managed Board Needs",
+      "subhead": "One platform covers the full scope of community administration \u2014 no add-on modules, no per-feature fees at base tier."
     },
     {
       "type": "social_proof",
       "quotes": [
         {
-          "quote": "We lost our management company in October with 30 days notice. CondoCentral had us billing dues and sending compliant meeting notices before the November board meeting. The treasurer role finally makes sense to me.",
-          "author": "Board Treasurer",
-          "role": "112-unit condominium association, Florida"
-        },
-        {
-          "quote": "The AI pulled language directly from our CC&Rs to write the architectural denial letter. I would have spent a weekend on that. It took four minutes and cited the right section numbers.",
+          "quote": "Our management company left with 60 days' notice and took all the records. CondoCentral helped us rebuild the ledger, send the first dues invoices ourselves, and hold a compliant annual meeting \u2014 all within the first month.",
           "author": "Board President",
-          "role": "78-unit planned community, California"
+          "role": "148-unit condominium association, Florida"
         },
         {
-          "quote": "We were paying $6,200 a month to a management company that couldn't tell us our reserve balance without a three-day wait. Now I pull that number myself before every board meeting.",
-          "author": "HOA President",
-          "role": "230-unit townhome association, Texas"
+          "quote": "I'm a treasurer with no accounting background. The AI-drafted notices actually cite our CC&Rs, so I feel confident sending them without a lawyer reviewing every line.",
+          "author": "Treasurer",
+          "role": "Self-managed HOA, 72 units, California"
+        },
+        {
+          "quote": "We were paying $52 per unit per month. Switching to CondoCentral cut our administrative overhead by more than $60,000 a year and gave us more visibility into our own finances than we ever had before.",
+          "author": "Operations Lead",
+          "role": "210-unit planned community, Texas"
         }
       ],
-      "title": "From Boards Who Took Back Control"
+      "title": "Trusted by Boards Taking Back Control"
     },
     {
       "type": "pricing_teaser",
       "tiers": [
         {
-          "name": "Foundation",
+          "name": "Essentials",
           "features": [
-            "Up to 100 units",
-            "Dues billing and payment tracking",
-            "Double-entry operating ledger",
-            "Owner and unit registry",
-            "Document vault",
-            "Email resident communications",
-            "Standard compliance calendar (FL, CA, TX, NV)"
+            "Up to 75 units",
+            "Dues billing and owner ledger",
+            "Document vault and meeting management",
+            "Email-based resident communication",
+            "Standard financial reports"
           ]
         },
         {
-          "name": "Steward",
+          "name": "Community",
           "features": [
-            "Up to 250 units",
-            "Everything in Foundation",
-            "AI compliance document drafting grounded in your CC&Rs",
-            "Reserve fund tracking and reporting",
-            "Board role permissions and audit log",
-            "State-specific disclosure report generation",
-            "Resident community portal"
+            "Up to 200 units",
+            "Everything in Essentials",
+            "CC&R-grounded AI document drafting",
+            "Violation tracking with photo attachments",
+            "State-specific compliance guidance",
+            "Vendor and work order management",
+            "Owner self-service portal"
           ],
           "highlighted": true
         },
         {
-          "name": "Fiduciary",
+          "name": "Association",
           "features": [
             "Up to 400 units",
-            "Everything in Steward",
-            "Special assessment scheduling and proration",
-            "Multi-fund accounting (operating, reserve, special)",
-            "Priority compliance calendar with statute-change alerts",
-            "Dedicated onboarding for record migration",
-            "Export-ready financials for CPA or attorney review"
+            "Everything in Community",
+            "Advanced financial reporting and audit export",
+            "Multi-phase or multi-building unit structure",
+            "Priority onboarding support",
+            "Custom document templates from your CC&Rs"
           ]
         }
       ],
       "title": "Straightforward Pricing. No Per-Unit Surprises.",
-      "subhead": "A flat community subscription \u2014 not a per-unit fee that scales against you as your community grows. Plans are sized by community, not by headcount."
+      "subhead": "Flat monthly tiers sized for self-managed communities \u2014 not a management-company billing model in disguise."
     },
     {
       "type": "faq",
       "items": [
         {
           "q": "We've never self-managed before. Is this realistic for a volunteer board?",
-          "a": "Yes \u2014 and CondoCentral is designed specifically for that transition. The platform guides you through setup with your existing documents, surfaces the tasks that need board attention each month, and keeps a compliance calendar so nothing statutory falls through the cracks. Most boards are fully operational within one billing cycle."
+          "a": "Yes \u2014 CondoCentral is designed for boards without professional management experience. The workflow follows what a board actually does each month, and the AI drafting tools handle the documents that typically require outside help. Most boards are fully operational within two weeks of onboarding."
         },
         {
-          "q": "How does the AI know our CC&Rs well enough to draft compliant documents?",
-          "a": "When you upload your governing documents, CondoCentral indexes them and uses them as the authoritative source for any AI-drafted communication. Violation notices, architectural decisions, and rule-enforcement letters cite your specific article and section numbers \u2014 not generic language. The board always reviews and approves before anything is sent."
+          "q": "Our records are a mess after our management company left. Can we still start?",
+          "a": "This is the most common situation we onboard. You can import whatever you have \u2014 a spreadsheet, a PDF ledger, even a partial list of owners \u2014 and CondoCentral helps you establish a clean starting balance. The audit trail begins from the date you go live; prior history is archived as reference."
         },
         {
-          "q": "Does CondoCentral handle Florida's new reserve-funding requirements or California's Civil Code notice rules?",
-          "a": "Yes. Compliance frameworks for Florida (including post-Surfside legislation), California Civil Code, Texas Property Code, and Nevada NRS are built into the platform's document drafting, compliance calendar, and disclosure report generation. When statutes are updated, the platform flags which of your community's standing practices or documents may need board review."
+          "q": "How does the AI know our specific CC&Rs?",
+          "a": "You upload your Declaration, Bylaws, and Rules during setup. CondoCentral indexes those documents and uses that language \u2014 including section references \u2014 when drafting notices and correspondence. The AI does not rely on generic HOA templates; it draws from your governing documents specifically."
         },
         {
-          "q": "What happens to our records if we ever leave CondoCentral?",
-          "a": "Your data belongs to your community. You can export your full owner registry, ledger history, document vault, and communication records in standard formats at any time. We don't hold your records hostage \u2014 that's the kind of behavior we exist to replace."
+          "q": "Does CondoCentral cover Florida, California, Texas, and Nevada compliance requirements?",
+          "a": "Yes. Each state has distinct statutes governing HOA collections, meeting procedures, reserve requirements, and owner rights. CondoCentral surfaces the rules applicable to your state and flags deadlines and required notice language so your board stays on the right side of the law."
         },
         {
-          "q": "We have a dispute with an owner over unpaid dues and years of messy records. Can CondoCentral help us untangle that?",
-          "a": "CondoCentral lets you import historical payment records and reconstruct an assessment ledger from whatever starting point your records allow. Once imported, the full payment history, assessment schedule, and any board communications live in one auditable thread \u2014 exactly the documentation you need for a demand letter or small-claims proceeding."
+          "q": "What happens if our community grows or we need to hand off to a new board?",
+          "a": "Every record, document, and financial transaction stays in CondoCentral and transfers seamlessly when board members change. New officers get role-based access and inherit full historical context \u2014 the institutional knowledge lives in the platform, not in any one person's inbox."
         }
       ],
-      "title": "Questions Boards Ask Before Letting Go of a Management Company"
+      "title": "Questions Boards Ask Before Switching"
     },
     {
       "type": "cta_band",
-      "headline": "Your Community Deserves a Board That Can Actually Run It",
-      "subhead": "Join the boards in Florida, California, Texas, and Nevada who chose to govern their communities with the same care and precision they bring to their own finances \u2014 without writing a check to a management company every month."
+      "headline": "Your Community Deserves a Board That's Fully in Control",
+      "subhead": "Start managing your HOA with the clarity, records, and tools that make self-management sustainable \u2014 no management company required."
     }
   ]
 };
