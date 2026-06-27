@@ -31,9 +31,12 @@ export async function Landing(): Promise<JSX.Element> {
 
   return (
     <section style={{ maxWidth: 720, padding: "32px 0 24px" }}>
-      <h1 style={{ fontSize: "2.4rem", lineHeight: 1.12, marginBottom: "0.75rem" }}>
+      <h1 style={{ fontSize: "2.4rem", lineHeight: 1.12, marginBottom: "0.5rem" }}>
         {headline}
       </h1>
+      <p style={{ fontSize: "1.25rem", fontWeight: 600, marginBottom: "0.75rem", color: "inherit" }}>
+        Self-management made simple for every HOA.
+      </p>
       <p
         style={{
           fontSize: "1.15rem",
