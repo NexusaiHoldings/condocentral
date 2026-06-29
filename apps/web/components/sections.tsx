@@ -75,9 +75,12 @@ function Hero(s: HeroSection, ctx: SectionContext): JSX.Element {
       <div style={{ display: "flex", gap: 40, alignItems: "center", flexWrap: "wrap" }}>
         <div style={{ flex: "1 1 380px", minWidth: 0 }}>
           {s.eyebrow ? <span className="eyebrow">{s.eyebrow}</span> : null}
-          <h1 style={{ fontSize: "2.9rem", lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "0.9rem" }}>
+          <h1 style={{ fontSize: "2.9rem", lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "0.5rem" }}>
             {s.headline}
           </h1>
+          <p style={{ fontSize: "1.35rem", fontWeight: 600, color: "var(--substrate-fg)", lineHeight: 1.3, marginBottom: "0.9rem" }}>
+            Self-management made simple for every HOA.
+          </p>
           {s.subhead ? (
             <p style={{ fontSize: "1.2rem", color: "var(--substrate-muted)", lineHeight: 1.5, marginBottom: "1.9rem", maxWidth: 560 }}>
               {s.subhead}
