@@ -9,6 +9,8 @@
 export type NavLink = {
   href: string;
   label: string;
+  /** Operator/admin route — TopNav shows it only to admins. */
+  adminOnly?: boolean;
 };
 
 export type NavGroup = {
