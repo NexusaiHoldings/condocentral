@@ -123,6 +123,10 @@ export default function LoginPage(): JSX.Element {
           Create one
         </a>
       </p>
+
+      <p style={{ fontSize: "0.78rem", color: "var(--substrate-muted, #6b7280)", marginTop: "1.25rem", textAlign: "center", lineHeight: 1.5 }}>
+        Your account and community data are always encrypted and kept private.
+      </p>
     </div>
   );
 }
